@@ -1,5 +1,11 @@
 package entities;
 
-public class ElementoMultimediale {
-    String name;
+public abstract class ElementoMultimediale {
+    /*ATTRIBUTI*/
+    protected String name;
+
+    /*COSTRUTTI*/
+    public ElementoMultimediale(String name) {
+        this.name = name;
+    }
 }
