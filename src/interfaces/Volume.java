@@ -1,9 +1,9 @@
 package interfaces;
 
 public interface Volume {
-    public int abbassaVolume();
+    public void abbassaVolume();
 
-    public int alzaVolume();
+    public void alzaVolume();
 
-    public String showVolume(int volume);
+    public String showVolume();
 }

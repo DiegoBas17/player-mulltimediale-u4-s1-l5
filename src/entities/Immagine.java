@@ -2,24 +2,24 @@ package entities;
 
 import interfaces.Luminosità;
 
-public class immagine extends ElementoMultimediale implements Luminosità {
+public class Immagine extends ElementoMultimediale implements Luminosità {
     /*ATTRIBUTI*/
     private int luminosita;
 
     /*COSTRUTTI*/
-    public immagine(String name, int luminosita) {
+    public Immagine(String name, int luminosita) {
         super(name);
         this.luminosita = luminosita;
     }
 
     @Override
-    public int abbassaLuminosita(int luminosita) {
-        return luminosita - 1;
+    public void abbassaLuminosita() {
+        this.luminosita -= 1;
     }
 
     @Override
-    public int alzaLuminosita(int luminosita) {
-        return luminosita + 1;
+    public void alzaLuminosita() {
+        this.luminosita += 1;
     }
 
     @Override

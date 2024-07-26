@@ -1,9 +1,9 @@
 package interfaces;
 
 public interface Luminosità {
-    public int abbassaLuminosita(int luminosita);
+    public void abbassaLuminosita();
 
-    public int alzaLuminosita(int luminosita);
+    public void alzaLuminosita();
 
     public String visualizzaLuminosita(int luminosita);
 }
