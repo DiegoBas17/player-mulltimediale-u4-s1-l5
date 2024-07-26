@@ -10,7 +10,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Crea una Collezione di oggetti multimediali. Puoi aggiungere 5 oggetti nella versione gratuita, puoi scegliere tra: Audio, Video e Immagine.");
         ElementoMultimediale[] collezione = new ElementoMultimediale[5];
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < 5; i++) {
             System.out.println("Inserisci il tipo del file tra: audio, video e immagine.");
             String nomeMultimediale = scanner.nextLine();
             switch (nomeMultimediale) {
