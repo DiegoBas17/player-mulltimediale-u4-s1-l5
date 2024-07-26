@@ -20,7 +20,7 @@ public class Audio extends ElementoMultimediale implements Play, Volume {
     public void play() {
         System.out.println(this.name);
         for (int i = 0; i < this.durata; i++) {
-            System.out.println(this.name + showVolume(this.volume));
+            System.out.println(this.name + showVolume());
         }
     }
 
@@ -37,13 +37,27 @@ public class Audio extends ElementoMultimediale implements Play, Volume {
     @Override
     public String showVolume() {
         String valoreVolume = "";
-        for (int i = 0; i <= this.volume; i++) {
+        for (int i = 1; i <= this.volume; i++) {
             valoreVolume += "!";
         }
         return valoreVolume;
     }
 
+    public int getDurata() {
+        return durata;
+    }
+
+    public void setDurata(int durata) {
+        this.durata = durata;
+    }
+
+    public int getVolume() {
+        return volume;
+    }
+
     public void setVolume(int volume) {
         this.volume = volume;
     }
+
+
 }

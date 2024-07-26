@@ -12,6 +12,12 @@ public class Immagine extends ElementoMultimediale implements Luminosità {
         this.luminosita = luminosita;
     }
 
+    /*METODO*/
+    public void show() {
+        System.out.println(this.name + visualizzaLuminosita());
+
+    }
+
     @Override
     public void abbassaLuminosita() {
         this.luminosita -= 1;
@@ -23,11 +29,19 @@ public class Immagine extends ElementoMultimediale implements Luminosità {
     }
 
     @Override
-    public String visualizzaLuminosita(int luminosita) {
+    public String visualizzaLuminosita() {
         String valoreLuminosita = "";
-        for (int i = 0; i <= luminosita; i++) {
+        for (int i = 1; i <= this.luminosita; i++) {
             valoreLuminosita += "*";
         }
         return valoreLuminosita;
+    }
+
+    public int getLuminosita() {
+        return luminosita;
+    }
+
+    public void setLuminosita(int luminosita) {
+        this.luminosita = luminosita;
     }
 }

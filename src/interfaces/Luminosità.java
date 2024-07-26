@@ -5,5 +5,5 @@ public interface Luminosità {
 
     public void alzaLuminosita();
 
-    public String visualizzaLuminosita(int luminosita);
+    public String visualizzaLuminosita();
 }
